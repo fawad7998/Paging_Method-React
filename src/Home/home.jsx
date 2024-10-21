@@ -22,11 +22,8 @@ const Home = () => {
             }
             setLoading(false);
         };
-
-
         fetchMovies();
     }, []);
-
     // Pagination logic
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
